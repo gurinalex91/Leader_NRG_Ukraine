@@ -9,6 +9,14 @@
 		font-family: "Open Sans";
 		font-size: 15px;
 	}
+	.form-control:focus{
+		box-shadow: none;
+		border: none;
+		outline: none;
+	}
+	.btn:focus{
+		box-shadow: none;
+	}
 /*navbar*/
 	.header{
 		background-color: #35d06e;
@@ -288,6 +296,9 @@
 		border: 1px solid #35d06e;
 		border-radius: 0;
 	}
+	.calc .form-control:focus{
+		border: 1px solid #35d06e;
+	}
 	.left-box label{
 		color: #232323;
 		font-weight: 400;
@@ -319,6 +330,7 @@
 		transform: rotate(45deg);
 		cursor: pointer;
 	}
+	
 	.right-box{
 		background: #fff;
 		padding: 30px 10px 0;
@@ -701,6 +713,11 @@
 		border-radius: 0;
 		padding: 25px 20px;
 	}
+	.join-us .form-control:focus{
+		box-shadow: none;
+		outline: none;
+		border: 1px solid #ced4da;
+	}
 	.join-us ::-webkit-input-placeholder{
 		color: #91969c;
 		font-style: italic;
@@ -817,11 +834,13 @@
 	    vertical-align: middle; 
 	    background: transparent;
 	    padding: 12px 20px;
-	    color: #fff;
+		color: #fff;
+		width: 100%;
    }
    footer input[type="submit"] {
 	    padding: 15px 20px 14px; 
-	    border: none;
+		border: none;
+		outline: none;
 	    background: #35d06e;
 	    color: #ffffff;
 		font-size: 14px;
